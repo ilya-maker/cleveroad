@@ -49,7 +49,7 @@ const App = () => {
     return { date: dateAstext, time: `${hour}:${minutes}` }
   }
 
-  const showLoader = !positionOfISS.latitude || !listPeople.length;
+  const showLoader = !positionOfISS?.latitude || !listPeople?.length;
   return (
     <div className={comp}>
         {!showLoader ? 
